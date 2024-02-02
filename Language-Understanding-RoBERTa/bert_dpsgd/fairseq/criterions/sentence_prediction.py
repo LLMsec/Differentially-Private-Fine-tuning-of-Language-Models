@@ -55,6 +55,7 @@ class SentencePredictionCriterion(FairseqCriterion):
                 fp = ((logits[:, 0] <= logits[:, 1]) & (targets == 0)).long().sum()
                 fn = ((logits[:, 0] > logits[:, 1]) & (targets == 1)).long().sum()
                 tn = ((logits[:, 0] > logits[:, 1]) & (targets == 0)).long().sum()
+                # breakpoint()
                 assert (tp + fp + tn + fn) == targets.size(0), 'invalid size'
         else:
             logits = logits.squeeze().float()

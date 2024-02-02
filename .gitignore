@@ -1,3 +1,9 @@
+roberta.base/
+log_dir/
+.gitignore
+*.tar.gz
+*.pyc
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
