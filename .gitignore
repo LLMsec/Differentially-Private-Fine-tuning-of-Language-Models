@@ -1,5 +1,7 @@
 roberta.base/
 log_dir/
+train/
+valid/
 .gitignore
 *.tar.gz
 *.pyc
